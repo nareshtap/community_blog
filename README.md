@@ -73,7 +73,7 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/community-blog.git
+git clone git@github.com:nareshtap/community_blog.git
 ```
 
 2. Navigate to the project directory:
@@ -135,3 +135,7 @@ yarn dev
 - Smooth animations and transitions
 - Confirmation dialogs for important actions
 
+### Demo
+
+
+![community_blog](https://github.com/user-attachments/assets/b441699c-5ea4-490f-8b6f-f85bb14f250e)
