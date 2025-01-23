@@ -78,7 +78,7 @@ git clone git@github.com:nareshtap/community_blog.git
 
 2. Navigate to the project directory:
 ```bash
-cd community-blog
+cd community_blog
 ```
 
 3. Install dependencies:
