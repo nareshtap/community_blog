@@ -1,0 +1,68 @@
+.wrapperHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+    
+    button{
+        color: #fff;
+        border-radius: 6px;
+        border: none;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 6px 16px;
+        text-transform: capitalize;
+        background: #23b5ff;
+        cursor: pointer;
+        outline: auto;
+
+        &:focus, &:focus-within, &:focus-visible {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+ .dialogWrap {
+    :global .MuiButton-textPrimary {
+        color: #fff;
+        border-radius: 6px;
+        border: none;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 6px 16px;
+        text-transform: capitalize;
+        background: #23b5ff;
+        cursor: pointer;
+        outline: auto;
+
+        &:focus, &:focus-within, &:focus-visible {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    :global .MuiButton-textSecondary {
+        color: #f01c1c;
+        border-radius: 6px;
+        border:none;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 6px 16px;
+        text-transform: capitalize;
+        background: transparent;
+        cursor: pointer;
+        outline: auto;
+        &:focus, &:focus-within, &:focus-visible {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapperHeader {
+        margin: 16px 0;
+    }
+}

@@ -1,0 +1,137 @@
+.commentItem {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-left: 2px solid #e1e1e1;
+  margin-top: 10px;
+
+  .commentContent {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .avatar {
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .username {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .commentText {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+  }
+
+  .actionsBtn {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+
+
+    .replyButton {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: rgb(45, 183, 245);
+      font-size: 14px;
+      gap: 5px;
+      .iconWrap{
+        font-size: 20px;
+      }
+    }
+
+    .deltButton {
+      color: #dc3545;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .iconWrap{
+      font-size: 20px;
+    }
+  }
+
+  .replyBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+    .textarea {
+      margin-bottom: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      resize: vertical;
+      background-color: #fff;
+      color: #000;
+      padding: 8px 12px;
+    }
+  }
+
+  .replyActions {
+    display: flex;
+    gap: 10px;
+
+    .saveButton {
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 6px 16px;
+      text-transform: capitalize;
+      background: #23b5ff;
+      cursor: pointer;
+      outline: auto;
+
+      &:focus, &:focus-within, &:focus-visible {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    }
+  }
+
+  .replyList {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .cancelButton {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:focus, &:focus-within, &:focus-visible {
+      border: none;
+      box-shadow: none;
+      outline: none;
+  }
+  }
+
+}
+@media (max-width:767px) {
+  .commentItem {
+    padding: 12px;
+    border-left: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-top: 0;
+  }
+}
