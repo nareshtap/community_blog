@@ -1,4 +1,3 @@
-// src/components/Post/Post.tsx
 import { Typography } from '@mui/material';
 import PostList from '../postList/PostList';
 import styles from './styles.module.scss'

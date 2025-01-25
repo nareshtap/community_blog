@@ -1,4 +1,3 @@
-// src/components/PostList/PostList.tsx
 import React, { useState } from 'react';
 import { blogData as initialBlogData } from '../../const/blogData';
 import PostForm from '../postForm/PostForm';

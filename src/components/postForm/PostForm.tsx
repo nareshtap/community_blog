@@ -4,7 +4,6 @@ import styles from './styles.module.scss';
 import { PostFormProps } from '../../utils/interfaces';
 import { marked } from 'marked';
 import { generateDefaultPost } from '../../const/blogData';
-import { defaultComments } from '../../const/postComments';
 
 const PostForm: React.FC<PostFormProps> = ({ addPost }) => {
   const [showForm, setShowForm] = useState(false);
@@ -21,7 +20,7 @@ const PostForm: React.FC<PostFormProps> = ({ addPost }) => {
       ...newPost,
       id: Date.now(),
       content: htmlContent,
-      comments: [...defaultComments],
+      comments: [],
     };
 
     addPost(postWithId);
@@ -29,13 +28,11 @@ const PostForm: React.FC<PostFormProps> = ({ addPost }) => {
     setShowForm(false);
   };
 
-  // Check if all required fields are filled
   const isFormValid = newPost.title.trim() !== '' && newPost.author.trim() !== '' && newPost.content.trim() !== '';
 
   return (
     <div className={styles.wrapperHeader}>
       <Button
-        // className={styles.btn}
         color='secondary'
         onClick={() => setShowForm(true)}
         variant="contained"
@@ -82,9 +79,8 @@ const PostForm: React.FC<PostFormProps> = ({ addPost }) => {
           <Button onClick={() => setShowForm(false)} color="error" variant='contained'>
             Cancel
           </Button>
-          {/* Change background color based on the form validity */}
-          <Button    onClick={handleAddPost}  disabled={!isFormValid} variant="contained" color={isFormValid ? "primary": "secondary"}>
-              Save Post
+          <Button onClick={handleAddPost} disabled={!isFormValid} variant="contained" color={isFormValid ? "primary" : "secondary"}>
+            Save Post
           </Button>
         </DialogActions>
       </Dialog>

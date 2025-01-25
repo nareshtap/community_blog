@@ -1,4 +1,3 @@
-// src/data/blogData.ts
 import { defaultComments } from './postComments';
 
 export const blogData = [
